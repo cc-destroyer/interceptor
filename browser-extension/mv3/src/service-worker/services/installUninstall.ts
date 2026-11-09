@@ -1,10 +1,13 @@
 import config from "common/config";
 import { initBlockedDomainsStorage } from "../../utils";
 
+// local fork build (ENV=fork, config/configs/env/fork.json): no Requestly install / uninstall pages
+const isLocalFork = config.env === "fork";
+
 const handleExtensionInstalledOrUpdated = (details: chrome.runtime.InstalledDetails) => {
   if (details.reason === chrome.runtime.OnInstalledReason.INSTALL) {
     initBlockedDomainsStorage();
-    chrome.tabs.create({ url: config.LANDING_PAGE_BASE_URL + "/extension-installed-success" });
+    if (!isLocalFork) chrome.tabs.create({ url: config.LANDING_PAGE_BASE_URL + "/extension-installed-success" });
   }
 
   if (details.reason === chrome.runtime.OnInstalledReason.UPDATE) {
@@ -16,5 +19,5 @@ const handleExtensionInstalledOrUpdated = (details: chrome.runtime.InstalledDeta
 
 export const handleInstallUninstall = () => {
   chrome.runtime.onInstalled.addListener(handleExtensionInstalledOrUpdated);
-  chrome.runtime.setUninstallURL(config.WEB_URL + "/goodbye/");
+  if (!isLocalFork) chrome.runtime.setUninstallURL(config.WEB_URL + "/goodbye/");
 };

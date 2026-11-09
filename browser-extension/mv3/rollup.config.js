@@ -5,6 +5,9 @@ import terser from "@rollup/plugin-terser";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import { version } from "./package.json";
 import { browser, WEB_URL, OTHER_WEB_URLS } from "../config/dist/config.build.json";
+import { env } from "../config/dist/config.build.json";
+
+const localFork = env === "fork"; // local fork build: ENV=fork (config/configs/env/fork.json)
 
 const OUTPUT_DIR = "dist";
 const isProductionBuildMode = process.env.BUILD_MODE === "production";
@@ -39,6 +42,15 @@ const processManifest = (content) => {
 
   contentScripts[0].matches = webURLPatterns;
   contentScripts[1].exclude_matches = webURLPatterns;
+
+  if (localFork) {
+    // local fork: don't let BrowserStack pages / extensions message this extension, no Requestly update URL
+    delete manifestJson.externally_connectable;
+    delete manifestJson.browser_specific_settings?.gecko?.update_url;
+    // static rule that redirects _rq_delay_ URLs to https://app.requestly.io/delay/...
+    const dnr = manifestJson.declarative_net_request;
+    if (dnr?.rule_resources) dnr.rule_resources = dnr.rule_resources.filter((r) => r.id !== "delay_rules");
+  }
 
   if (!isProductionBuildMode) {
     manifestJson.commands = {

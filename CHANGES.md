@@ -26,11 +26,16 @@ New code lives in `app/src/local/`.
 | `app/src/views/features/rules/RuleEditor/components/Header/ActionButtons/ShareRuleButton/index.jsx` | Same | Same |
 | `app/src/components/common/SharingModal/index.tsx` | Only the Download tab, no "share in workspace" footer | Shared list / workspace tabs are cloud |
 | `app/src/layouts/AppLayout/GlobalModals/index.tsx` | Sign-in modal replaced by `NoAccountNotice` | Anything that needs an account shows a message instead of Requestly login |
+| `app/src/modules/extension/mv3RuleParser/parseDelayRule.ts` | No DNR delay redirect when `LOCAL_OFFLINE` | Extension non-XHR delays redirect through https://app.requestly.io/delay/<ms>/<url> |
+| `browser-extension/common/src/config.ts` | `env` type includes `"fork"` | Fork extension build |
+| `browser-extension/mv3/src/service-worker/services/installUninstall.ts` | No install / uninstall pages when `env === "fork"` | Opened requestly.com / app.requestly.io |
+| `browser-extension/mv3/rollup.config.js` | Fork build: drop `externally_connectable`, Firefox `update_url`, `delay_rules` DNR resource | BrowserStack pages/extension could message it; Requestly update URL; delay redirect to Requestly |
 
 ## Local-only files
 
 - `app/src/local/config.ts` – `LOCAL_OFFLINE` (network) and `LOCAL_HIDE_CLOUD_UI` (account / cloud UI) switches.
 - `app/src/local/NoAccountNotice.tsx` – replaces the sign-in modal.
+- `browser-extension/config/configs/env/fork.json` – extension build env: UI at http://localhost:3000, no other Requestly origins, no landing page. Build with `./dev.sh extension` (meta repo).
 - `app/src/local/growthbook.ts` + `growthbook-features.json` – prod flag snapshot (2026-11-05) + `LOCAL_FLAG_OVERRIDES` (API client block screen off, upsell nags off, kill switches off, cloud AI/BrowserStack off).
 - `app/src/local/fonts.ts` – font imports.
 - `app/src/local/plan.ts` – permanent active Professional plan injected into the user (`LOCAL_UNLOCK_ALL_FEATURES` toggle).

@@ -5,7 +5,7 @@ export interface ExtensionConfig {
   browser: "chrome" | "firefox" | "edge";
   storageType: "sync" | "local";
   contextMenuContexts: chrome.contextMenus.ContextType[];
-  env: "local" | "beta" | "prod";
+  env: "local" | "beta" | "prod" | "fork";
   WEB_URL: string;
   OTHER_WEB_URLS?: string[];
   logLevel: "debug" | "info";
