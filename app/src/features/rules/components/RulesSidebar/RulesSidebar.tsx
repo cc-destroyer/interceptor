@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 import { getModeData } from "components/features/rules/RuleBuilder/actions";
 import { RuleEditorMode } from "features/rules/types/rules";
 import { RulesCreateModeSidebar } from "./RulesCreateModeSidebar/RulesCreateModeSidebar";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
 
 const rulesSidebarItems = [
   {
@@ -15,11 +16,15 @@ const rulesSidebarItems = [
     path: PATHS.RULES.MY_RULES.ABSOLUTE,
     icon: <MyRulesIcon />,
   },
-  {
-    title: "Shared lists",
-    path: PATHS.SHARED_LISTS.RELATIVE,
-    icon: <SharedListIcon />,
-  },
+  ...(LOCAL_HIDE_CLOUD_UI
+    ? [] // local fork: shared lists are cloud-only
+    : [
+        {
+          title: "Shared lists",
+          path: PATHS.SHARED_LISTS.RELATIVE,
+          icon: <SharedListIcon />,
+        },
+      ]),
   {
     title: "Templates",
     path: PATHS.RULES.TEMPLATES.ABSOLUTE,

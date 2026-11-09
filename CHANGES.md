@@ -17,10 +17,20 @@ New code lives in `app/src/local/`.
 | `app/src/layouts/DashboardLayout/MenuHeader/MenuHeader.tsx` | Hide GitHub star button | api.github.com request |
 | `app/src/hooks/useGeoLocation.js` | Skip lookup, fall back to "US" | Cloudflare trace request |
 | `app/src/layouts/AppLayout/index.tsx` | Don't render `AppUpdateNotifier` | Firebase RTDB websocket for version checks |
+| `app/src/layouts/DashboardLayout/MenuHeader/MenuHeader.tsx` | Hide workspace selector, plan badge, Ask AI, sign-in / user menu (`LOCAL_HIDE_CLOUD_UI`) | Account / cloud only |
+| `app/src/layouts/DashboardLayout/Sidebar/PrimarySidebar/index.tsx` | Hide Files and Invite | Cloud mocks / file server, team invites |
+| `app/src/features/settings/components/SettingsPrimarySidebar/index.tsx` | Hide Account and My organization sections | Profile, members, team workspaces, plan, billing need an account |
+| `app/src/features/settings/components/GlobalSettings/index.jsx` | Hide rules syncing card | Cloud sync |
+| `app/src/features/rules/components/RulesSidebar/RulesSidebar.tsx` | Hide Shared lists | Cloud |
+| `app/src/features/rules/context/actions.tsx` | Share opens the sharing modal without login | Download (local export) works without an account |
+| `app/src/views/features/rules/RuleEditor/components/Header/ActionButtons/ShareRuleButton/index.jsx` | Same | Same |
+| `app/src/components/common/SharingModal/index.tsx` | Only the Download tab, no "share in workspace" footer | Shared list / workspace tabs are cloud |
+| `app/src/layouts/AppLayout/GlobalModals/index.tsx` | Sign-in modal replaced by `NoAccountNotice` | Anything that needs an account shows a message instead of Requestly login |
 
 ## Local-only files
 
-- `app/src/local/config.ts` – `LOCAL_OFFLINE` switch for all of the above.
+- `app/src/local/config.ts` – `LOCAL_OFFLINE` (network) and `LOCAL_HIDE_CLOUD_UI` (account / cloud UI) switches.
+- `app/src/local/NoAccountNotice.tsx` – replaces the sign-in modal.
 - `app/src/local/growthbook.ts` + `growthbook-features.json` – prod flag snapshot (2026-11-05) + `LOCAL_FLAG_OVERRIDES` (API client block screen off, upsell nags off, kill switches off, cloud AI/BrowserStack off).
 - `app/src/local/fonts.ts` – font imports.
 - `app/src/local/plan.ts` – permanent active Professional plan injected into the user (`LOCAL_UNLOCK_ALL_FEATURES` toggle).

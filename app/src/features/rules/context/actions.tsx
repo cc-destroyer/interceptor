@@ -1,4 +1,5 @@
 import React, { createContext, useCallback, useContext } from "react";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
 import {
   trackNewRuleButtonClicked,
   trackRulePinToggled,
@@ -160,7 +161,7 @@ export const RulesActionContextProvider: React.FC<RulesProviderProps> = ({ child
     (records?: StorageRecord[], onSuccess?: Function) => {
       Logger.log("[DEBUG]", "recordsShareAction", records);
       trackShareButtonClicked(onSuccess ? "bulk_action_bar" : "rules_list");
-      if (user.loggedIn) {
+      if (user.loggedIn || LOCAL_HIDE_CLOUD_UI) {
         const rulesToShare = records.filter(isRule);
         const ruleIds = rulesToShare.map((rule) => rule.id);
 

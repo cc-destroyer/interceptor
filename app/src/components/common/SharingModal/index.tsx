@@ -10,6 +10,7 @@ import { DownloadRules } from "./DownloadRules";
 import { ShareInWorkspaces } from "./Workspaces";
 import type { TabsProps } from "antd";
 import { SharingOptions } from "./types";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
 import { trackShareModalViewed, trackSharingTabSwitched } from "modules/analytics/events/misc/sharing";
 import "./index.css";
 import { getAllWorkspaces } from "store/slices/workspaces/selectors";
@@ -30,7 +31,7 @@ export const SharingModal: React.FC<ModalProps> = ({
   callback = () => {},
 }) => {
   const availableWorkspaces = useSelector(getAllWorkspaces);
-  const [activeTab, setActiveTab] = useState(SharingOptions.SHARE_LINK);
+  const [activeTab, setActiveTab] = useState(LOCAL_HIDE_CLOUD_UI ? SharingOptions.DOWNLOAD : SharingOptions.SHARE_LINK);
 
   const sharingOptions: TabsProps["items"] = useMemo(
     () => [
@@ -103,11 +104,11 @@ export const SharingModal: React.FC<ModalProps> = ({
         <Tabs
           defaultActiveKey={SharingOptions.WORKSPACE}
           activeKey={activeTab}
-          items={sharingOptions}
+          items={LOCAL_HIDE_CLOUD_UI ? sharingOptions.filter((o) => o.key === SharingOptions.DOWNLOAD) : sharingOptions}
           onChange={handleSharingOptionsChange}
         />
       </div>
-      {activeTab !== SharingOptions.WORKSPACE && selectedRules?.length ? (
+      {!LOCAL_HIDE_CLOUD_UI && activeTab !== SharingOptions.WORKSPACE && selectedRules?.length ? (
         <>
           <div className="sharing-modal-footer">
             <InfoCircleOutlined className="sharing-modal-footer-icon" />

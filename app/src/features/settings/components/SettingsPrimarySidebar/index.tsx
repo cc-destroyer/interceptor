@@ -1,4 +1,5 @@
 import React, { useMemo, useRef } from "react";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
 import { useSelector } from "react-redux";
 import { getAppMode, getUserAttributes } from "store/selectors";
 import { getUserAuthDetails } from "store/slices/global/user/selectors";
@@ -119,6 +120,11 @@ export const SettingsPrimarySidebar: React.FC = () => {
     ]
   );
 
+  // local fork: hide account / organization (team, billing) sections
+  const visibleSidebarItems = LOCAL_HIDE_CLOUD_UI
+    ? sidebarItems.filter((item) => !["my_accounts", "org_settings"].includes(item.id))
+    : sidebarItems;
+
   return (
     <Col
       className={`settings-primary-sidebar ${appMode === GLOBAL_CONSTANTS.APP_MODES.DESKTOP ? "app-mode-desktop" : ""}`}
@@ -144,7 +150,7 @@ export const SettingsPrimarySidebar: React.FC = () => {
       <Row className="settings-primary-sidebar-title">Settings</Row>
 
       <Col className="mt-16">
-        {sidebarItems.map((item) => {
+        {visibleSidebarItems.map((item) => {
           return (
             <Col key={item.id} className="settings-primary-sidebar-section">
               <Row className="settings-primary-sidebar-section-header" gutter={8} align="middle">

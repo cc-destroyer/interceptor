@@ -9,6 +9,7 @@ import { CONSTANTS as GLOBAL_CONSTANTS } from "@requestly/requestly-core";
 import { isFeatureCompatible } from "../../../../utils/CompatibilityUtils";
 import DataCollection from "./components/DataCollection";
 import RulesSyncing from "./components/RulesSyncing";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
 import { ImplicitRuleTesting } from "./components/ImplicitRuleTesting";
 import "./index.scss";
 import { BlockList } from "./components/BlockListSettings/BlockListSettings";
@@ -42,7 +43,7 @@ export const GlobalSettings = () => {
           Please enable the following settings to get the best experience
         </p>
         <div>
-          <RulesSyncing />
+          {!LOCAL_HIDE_CLOUD_UI && <RulesSyncing />}
           {user?.loggedIn ? <DataCollection /> : null}
         </div>
         <AIConsentSetting />

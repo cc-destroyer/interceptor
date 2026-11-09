@@ -1,4 +1,5 @@
 import React from "react";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
 import { useSelector, useDispatch } from "react-redux";
 import { globalActions } from "store/slices/global/slice";
 import { getCurrentlySelectedRuleData } from "store/selectors";
@@ -19,7 +20,7 @@ const ShareRuleButton = ({ isRuleEditorModal }) => {
 
   const shareRuleClickHandler = () => {
     trackShareButtonClicked("rule_editor");
-    if (user.loggedIn) {
+    if (user.loggedIn || LOCAL_HIDE_CLOUD_UI) {
       toggleSharingModal();
     } else {
       dispatch(

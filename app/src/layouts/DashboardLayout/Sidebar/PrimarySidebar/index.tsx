@@ -7,6 +7,7 @@ import { getAppMode, getIsSecondarySidebarCollapsed, getNetworkSessionSaveInProg
 import { PrimarySidebarLink } from "./components/PrimarySidebarLink/PrimarySidebarLink";
 import { PrimarySidebarItem } from "../type";
 import InviteButton from "./components/InviteButton/InviteButton";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
 import PATHS from "config/constants/sub/paths";
 //@ts-ignore
 import { CONSTANTS as GLOBAL_CONSTANTS } from "@requestly/requestly-core";
@@ -134,7 +135,7 @@ export const PrimarySidebar: React.FC = () => {
         title: "Files",
         path: PATHS.MOCK_SERVER.INDEX,
         icon: <img src={FilesIcon} alt="files" />,
-        display: true,
+        display: !LOCAL_HIDE_CLOUD_UI, // local fork: cloud-hosted mocks / file server
         tooltipContent: (
           <>
             Quickly upload JSON, JS, or CSS files and serve them as mock API endpoints to test your frontend without any
@@ -209,7 +210,7 @@ export const PrimarySidebar: React.FC = () => {
       </ul>
       <div className="primary-sidebar-bottom-btns">
         {isSlackConnectFeatureEnabled && isSlackInviteVisible && <JoinSlackButton />}
-        {!isLocalSyncEnabled && <InviteButton />}
+        {!isLocalSyncEnabled && !LOCAL_HIDE_CLOUD_UI && <InviteButton />}
       </div>
     </div>
   );

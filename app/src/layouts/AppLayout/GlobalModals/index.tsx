@@ -4,6 +4,8 @@ import RQAuthModal from "components/authentication/AuthModal";
 import { useDispatch, useSelector } from "react-redux";
 import { globalActions } from "store/slices/global/slice";
 import { useIsBrowserStackIntegrationOn } from "hooks/useIsBrowserStackIntegrationOn";
+import { LOCAL_HIDE_CLOUD_UI } from "local/config";
+import { NoAccountNotice } from "local/NoAccountNotice";
 
 export const GlobalModals = () => {
   const dispatch = useDispatch();
@@ -18,7 +20,9 @@ export const GlobalModals = () => {
     <>
       {activeModals.authModal.isActive ? (
         <>
-          {isBrowserstackIntegrationOn ? (
+          {LOCAL_HIDE_CLOUD_UI ? (
+            <NoAccountNotice /> // local fork: no Requestly sign-in
+          ) : isBrowserstackIntegrationOn ? (
             <AuthModal
               isOpen={activeModals.authModal.isActive}
               authMode={activeModals.authModal.props.authMode}
