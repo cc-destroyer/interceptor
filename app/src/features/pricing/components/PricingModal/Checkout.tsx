@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Col, Divider, Result, Row, Space, Spin, Typography } from "antd";
-import { loadStripe } from "@stripe/stripe-js";
+import { loadStripe } from "@stripe/stripe-js/pure"; // local fork: /pure = no script injection on import
+import { LOCAL_OFFLINE } from "local/config";
 import { EmbeddedCheckoutProvider, EmbeddedCheckout } from "@stripe/react-stripe-js";
 import { RQButton } from "lib/design-system/components";
 import { LoadingOutlined } from "@ant-design/icons";
@@ -24,7 +25,8 @@ interface CheckoutProps {
   source: string;
   onCheckoutCompleted?: () => void;
 }
-const stripePromise = loadStripe(process.env.VITE_REACT_APP_STRIPE_PUBLISHABLE_KEY);
+// local fork: don't load js.stripe.com on startup (this module is imported eagerly)
+const stripePromise = LOCAL_OFFLINE ? null : loadStripe(process.env.VITE_REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
 export const Checkout: React.FC<CheckoutProps> = ({
   clientSecret,

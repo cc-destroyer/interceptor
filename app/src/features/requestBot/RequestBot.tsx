@@ -8,6 +8,7 @@ import { MODELS } from "./constants";
 import { AIConsentModal } from "features/ai";
 import { getIsOptedforAIFeatures } from "store/slices/global/user/selectors";
 import "./requestBot.css";
+import { LOCAL_OFFLINE } from "local/config";
 
 interface RequestBotProps {
   isOpen: boolean;
@@ -35,6 +36,8 @@ export const RequestBot: React.FC<RequestBotProps> = ({ isOpen, onClose, modelTy
   const handleAIConsentDismiss = () => {
     onClose();
   };
+
+  if (LOCAL_OFFLINE) return null; // local fork: no Writesonic chat iframe
 
   return (
     <>

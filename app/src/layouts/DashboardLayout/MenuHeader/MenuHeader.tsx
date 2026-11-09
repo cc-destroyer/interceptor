@@ -19,6 +19,7 @@ import { Col } from "antd";
 import PremiumPlanBadge from "./PremiumPlanBadge/PremiumPlanBadge";
 import { getUserAuthDetails } from "store/slices/global/user/selectors";
 import GitHubButton from "react-github-btn";
+import { LOCAL_OFFLINE } from "local/config";
 import "./menuHeader.scss";
 
 export const MenuHeader = () => {
@@ -83,7 +84,7 @@ export const MenuHeader = () => {
           </RQButton> */}
         </div>
         <div className="app-primary-header__right-section">
-          <div>{gitHubStarButton}</div>
+          {!LOCAL_OFFLINE && <div>{gitHubStarButton}</div>}
           <RQButton
             type="transparent"
             icon={<BotIcon />}

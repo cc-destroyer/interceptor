@@ -4,6 +4,7 @@ import { globalActions } from "store/slices/global/slice";
 import { getUserGeoDetails } from "utils/geoUtils";
 import { submitAttrUtil } from "utils/AnalyticsUtils";
 import APP_CONSTANTS from "config/constants";
+import { LOCAL_OFFLINE } from "local/config";
 
 const useGeoLocation = () => {
   const dispatch = useDispatch();
@@ -11,7 +12,8 @@ const useGeoLocation = () => {
   // const [country, setCountry] = useState("US");
 
   useEffect(() => {
-    getUserGeoDetails()
+    // local fork: skip the Cloudflare trace lookup, fall back to "US"
+    (LOCAL_OFFLINE ? Promise.reject(new Error("offline")) : getUserGeoDetails())
       .then((details) => {
         // setCountry(currentCountry);
         dispatch(globalActions.updateUserCountry(details?.loc));

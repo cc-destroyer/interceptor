@@ -32,6 +32,7 @@ import { useAppLanguageObserver } from "hooks/useAppLanguageObserver";
 import useClientStorageService from "services/clientStorageService/hooks/useClientStorageService";
 import { BlockScreenHoc } from "componentsV2/BlockScreen/BlockScreenHoc";
 import { AppUpdateNotifier } from "componentsV2/AppUpdateNotifier/AppUpdateNotifier";
+import { LOCAL_OFFLINE } from "local/config";
 
 const { PATHS } = APP_CONSTANTS;
 const App: React.FC = () => {
@@ -75,7 +76,7 @@ const App: React.FC = () => {
       <AutomationNotAllowedNotice />
       <AppModeInitializer />
       <AuthHandler />
-      <AppUpdateNotifier />
+      {!LOCAL_OFFLINE && <AppUpdateNotifier /> /* local fork: no Firebase RTDB version check */}
 
       <GrowthBookProvider growthbook={growthbook}>
         <DBListeners />

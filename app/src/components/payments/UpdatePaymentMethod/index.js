@@ -5,7 +5,7 @@ import { Row, Col, Button } from "antd";
 import { toast } from "utils/Toast.js";
 // STRIPE
 import { CardElement, useStripe, useElements, Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
+import { loadStripe } from "@stripe/stripe-js/pure"; // local fork: /pure = no script injection on import
 // SUB COMPONENTS
 import Alert from "../../misc/Alert";
 import SpinnerColumn from "../../misc/SpinnerColumn";

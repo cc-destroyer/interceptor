@@ -9,6 +9,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { HotkeysProvider } from "react-hotkeys-hook";
 
 import "./init";
+import "local/fonts"; // local fork: bundled fonts instead of Google Fonts
 import "./assets/less/index.less";
 import "./styles/custom/custom.scss";
 

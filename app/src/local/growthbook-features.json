@@ -1,0 +1,4314 @@
+{
+  "dateUpdated": "2026-11-05T12:16:04.807Z",
+  "features": {
+    "activation_without_onboarding": {
+      "defaultValue": "variant",
+      "rules": [
+        {
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "hashVersion": 2,
+          "key": "activation_without_onboarding",
+          "meta": [
+            {
+              "key": "0",
+              "name": "Control"
+            },
+            {
+              "key": "1",
+              "name": "Variation 1"
+            }
+          ],
+          "name": "activation_without_onboarding",
+          "phase": "0",
+          "seed": "activation_without_onboarding",
+          "variations": ["control", "variant"],
+          "weights": [0.5, 0.5]
+        }
+      ]
+    },
+    "active_team_switcher": {
+      "defaultValue": true
+    },
+    "advanced_app_settings": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "company": "browserstack.com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "ai_chat_assistant": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "company": "jackhenry.com"
+          },
+          "force": false
+        },
+        {
+          "condition": {
+            "company": "browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "$or": [
+              {
+                "company": "aon.com"
+              },
+              {
+                "company": "aircanada.com"
+              },
+              {
+                "company": "gnc-hq.com"
+              },
+              {
+                "company": "prudential.com"
+              },
+              {
+                "company": "woolworths.co.nz"
+              },
+              {
+                "company": "applause.com"
+              },
+              {
+                "company": "woolworths.com.au"
+              },
+              {
+                "company": "edreamsodigeo.com"
+              },
+              {
+                "company": "aircanada.ca"
+              },
+              {
+                "company": "ext.aircanada.ca"
+              },
+              {
+                "company": "ssss.gouv.qc.ca"
+              },
+              {
+                "company": "veeam.com"
+              },
+              {
+                "company": "pawatech.com"
+              },
+              {
+                "company": "charter.com"
+              },
+              {
+                "company": "spectrum.com"
+              },
+              {
+                "company": "abtasty.com"
+              },
+              {
+                "company": "salesforce.com"
+              },
+              {
+                "company": "jackhenry.com"
+              },
+              {
+                "company": "elli.eco"
+              },
+              {
+                "company": "dynata.com"
+              },
+              {
+                "company": "browserstack.com"
+              },
+              {
+                "company": "covasoftware.com"
+              },
+              {
+                "company": "iqmetrix.com"
+              },
+              {
+                "company": "requestly.io"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "ai_chat_skills": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "ai_mock_response": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "ai_tests_generation": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "ai_tests_generation_arc": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "company": "jackhenry.com"
+          },
+          "force": false
+        },
+        {
+          "condition": {
+            "$or": [
+              {
+                "company": "aon.com"
+              },
+              {
+                "company": "aircanada.com"
+              },
+              {
+                "company": "gnc-hq.com"
+              },
+              {
+                "company": "prudential.com"
+              },
+              {
+                "company": "woolworths.co.nz"
+              },
+              {
+                "company": "applause.com"
+              },
+              {
+                "company": "woolworths.com.au"
+              },
+              {
+                "company": "edreamsodigeo.com"
+              },
+              {
+                "company": "aircanada.ca"
+              },
+              {
+                "company": "ext.aircanada.ca"
+              },
+              {
+                "company": "ssss.gouv.qc.ca"
+              },
+              {
+                "company": "veeam.com"
+              },
+              {
+                "company": "pawatech.com"
+              },
+              {
+                "company": "charter.com"
+              },
+              {
+                "company": "spectrum.com"
+              },
+              {
+                "company": "abtasty.com"
+              },
+              {
+                "company": "salesforce.com"
+              },
+              {
+                "company": "jackhenry.com"
+              },
+              {
+                "company": "elli.eco"
+              },
+              {
+                "company": "dynata.com"
+              },
+              {
+                "company": "browserstack.com"
+              },
+              {
+                "company": "covasoftware.com"
+              },
+              {
+                "company": "iqmetrix.com"
+              },
+              {
+                "company": "requestly.io"
+              }
+            ]
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "company": "browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": "rawat27kanishk@gmail.com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "ai_usage_quota": {
+      "defaultValue": {
+        "mode": "capped",
+        "weeklyUsd": 10
+      }
+    },
+    "allow_desktop_beta_preview_url_configuration": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": false
+        }
+      ]
+    },
+    "api-client-scripts": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "api_client_collection_runner_support": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_client_desktop_compatible": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": false
+        }
+      ]
+    },
+    "api_client_file_body_support": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_client_migration_block_screen": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_client_migration_block_screen_cloud": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_client_migration_block_screen_cloud_force": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_client_migration_block_screen_dismissable": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": ["shrey@requestly.io", "sahil@requestly.io"]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "api_client_migration_block_screen_local_fs": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_client_migration_block_screen_local_storage": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_client_workspace_export": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "api_design": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "api_docs": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "app_banner": {
+      "defaultValue": null,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$regex": "@workday\\.com$"
+            }
+          },
+          "force": [
+            {
+              "actions": ["request_access"],
+              "createdTs": 1709621995681,
+              "id": "request_team_access",
+              "isDismissable": false,
+              "text": "as per our [Terms of Use](https://requestly.io/terms/) Commercial usage (i.e. using for work) is not allowed in the Free plan. Join one of the existing billing teams or ask your manager to set up a new one",
+              "type": "warning"
+            }
+          ]
+        },
+        {
+          "condition": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "rq_subscription_type": {
+                      "$in": ["individual", "team"]
+                    },
+                    "subscription_status": "active"
+                  },
+                  {
+                    "days_since_install": {
+                      "$gte": 180
+                    }
+                  },
+                  {
+                    "num_rules": {
+                      "$gte": 3
+                    },
+                    "rq_subscription_type": "signup_trial"
+                  }
+                ]
+              },
+              {
+                "app_mode": {
+                  "$ne": "DESKTOP"
+                }
+              }
+            ]
+          },
+          "force": [
+            {
+              "actions": ["redirect_to_chrome_store_reviews"],
+              "backgroundColor": "#004EEB",
+              "createdTs": 1744245024000,
+              "id": "chrome_store_reviews",
+              "isDismissable": true,
+              "text": "Enjoying Requestly? Leave us a Chrome Store review \u2192 Get **1 month of Pro FREE**"
+            }
+          ]
+        }
+      ]
+    },
+    "app_onboarding": {
+      "defaultValue": "",
+      "rules": [
+        {
+          "condition": {
+            "deviceId": "test12"
+          },
+          "force": "workspace_onboarding"
+        },
+        {
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "meta": [
+            {
+              "key": "0"
+            },
+            {
+              "key": "1"
+            }
+          ],
+          "variations": ["control", "workspace_onboarding"],
+          "weights": [0.5, 0.5]
+        }
+      ]
+    },
+    "aws_sigv4": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": "shubhranshu@browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "aws_sso": {
+      "defaultValue": false
+    },
+    "azure_key_vault": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "$or": [
+                  {
+                    "company": "aon.com"
+                  },
+                  {
+                    "company": "aircanada.com"
+                  },
+                  {
+                    "company": "gnc-hq.com"
+                  },
+                  {
+                    "company": "prudential.com"
+                  },
+                  {
+                    "company": "woolworths.co.nz"
+                  },
+                  {
+                    "company": "applause.com"
+                  },
+                  {
+                    "company": "woolworths.com.au"
+                  },
+                  {
+                    "company": "edreamsodigeo.com"
+                  },
+                  {
+                    "company": "aircanada.ca"
+                  },
+                  {
+                    "company": "ext.aircanada.ca"
+                  },
+                  {
+                    "company": "ssss.gouv.qc.ca"
+                  },
+                  {
+                    "company": "veeam.com"
+                  },
+                  {
+                    "company": "pawatech.com"
+                  },
+                  {
+                    "company": "charter.com"
+                  },
+                  {
+                    "company": "spectrum.com"
+                  },
+                  {
+                    "company": "abtasty.com"
+                  },
+                  {
+                    "company": "salesforce.com"
+                  },
+                  {
+                    "company": "jackhenry.com"
+                  },
+                  {
+                    "company": "elli.eco"
+                  },
+                  {
+                    "company": "dynata.com"
+                  },
+                  {
+                    "company": "browserstack.com"
+                  },
+                  {
+                    "company": "covasoftware.com"
+                  },
+                  {
+                    "company": "iqmetrix.com"
+                  },
+                  {
+                    "company": "requestly.io"
+                  }
+                ]
+              },
+              {
+                "company": "browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "backgates_restriction": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "blocked_commercial_license_domain": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email_domain": {
+              "$in": ["salesforce_dot_com", "bytedance_dot_com", "capitalone_dot_com"]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "browserstack_checkout": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "browserstack_id": {
+              "$exists": true
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "browserstack_eds_integration": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "browserstack_integration": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "browserstack_sync_enabled": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "browserstack_th_enabled": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "bruno_importer": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "ci_cd_command_generator": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "cloud_agent": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": "automationbs+appa11y1@browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "company": "aircanada.ca"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "company": "aon.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "company": "requestly.io"
+          },
+          "force": true
+        }
+      ]
+    },
+    "compress_rule_pairs": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email_domain": "bluecore_dot_com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": "tbsr76@gmail.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": "portore5u@gmail.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": "vizio_dot_com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "active_workspace_id": "7IDFj36cOxAgk3ypW9x9"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "active_workspace_id": "sZu4TBUBGMkxXjcJLboO"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": "tixr_dot_com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "content_table_drag_and_drop_support": {
+      "defaultValue": true
+    },
+    "devconsole_detached_window": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "devtools_app_initiated_capture": {
+      "defaultValue": true
+    },
+    "digest_auth": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": "shubhranshu@browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "disable_electric_sync": {
+      "defaultValue": false
+    },
+    "disable_tracking": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "company": "aon.com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "display_accelerator_on_pricing": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "domain_with_custom_admin_info": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email_domain": "optum_dot_com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "enable-trash": {
+      "defaultValue": false
+    },
+    "enable_feature_by_os": {
+      "defaultValue": {
+        "whitelist": ["macOS", "Windows", "Linux"]
+      }
+    },
+    "environment_colors": {
+      "defaultValue": true
+    },
+    "git_integration": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "global_ai_support": {
+      "defaultValue": true
+    },
+    "graphql-support": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "graphql_schema_import": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        },
+        {
+          "condition": {
+            "company": "browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "company": "aircanada.ca"
+          },
+          "force": true
+        }
+      ]
+    },
+    "grouping_and_rule_activation": {
+      "defaultValue": "control",
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "x_flag_grouping_and_rule_activation": {
+                  "$exists": true
+                }
+              },
+              {
+                "num_rules": {
+                  "$exists": false
+                }
+              },
+              {
+                "$and": [
+                  {
+                    "num_groups": {
+                      "$exists": false
+                    }
+                  },
+                  {
+                    "num_rules": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "meta": [
+            {
+              "key": "0"
+            },
+            {
+              "key": "1"
+            }
+          ],
+          "variations": ["control", "variant1"],
+          "weights": [0.5, 0.5]
+        }
+      ]
+    },
+    "grpc_v2": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "hashicorp_vault": {
+      "defaultValue": true
+    },
+    "hawk": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": "shubhranshu@browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "homepage-experiment": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "http_sse_streaming": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "implicit_test_this_rule": {
+      "defaultValue": null,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": {
+            "enabled": true
+          }
+        },
+        {
+          "force": {
+            "enabled": false
+          }
+        }
+      ]
+    },
+    "import_artifact_capture": {
+      "defaultValue": true
+    },
+    "import_export_sessions": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "import_rules_from_charles": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "incentivization_onboarding": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "app_mode": "DESKTOP"
+          },
+          "force": false
+        },
+        {
+          "condition": {
+            "app_flavour": "SESSIONBEAR"
+          },
+          "force": false
+        },
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": false
+        },
+        {
+          "condition": {
+            "email": "gurami151097@gmail.com"
+          },
+          "force": false
+        }
+      ]
+    },
+    "is_session_replay_enabled": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "num_sessions": {
+                  "$gt": 0
+                }
+              },
+              {
+                "rq_subscription_type": "appsumo"
+              },
+              {
+                "email_domain": "buildinglink_dot_com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "join_team_reminder": {
+      "defaultValue": null
+    },
+    "jwt_bearer": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "keyboard_shortcuts": {
+      "defaultValue": true
+    },
+    "limit_to_private_workspace": {
+      "defaultValue": false
+    },
+    "local_log_file": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": "sanchitkumawat@google.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": "spaspa@google.com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "local_sync": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "local_sync_support": {
+      "defaultValue": {
+        "whitelist": ["macOS", "Linux", "Windows"]
+      },
+      "rules": [
+        {
+          "condition": {
+            "email": "navdeep.r+windows@browserstack.com"
+          },
+          "force": {
+            "whitelist": ["macOS", "Linux", "Windows"]
+          }
+        }
+      ]
+    },
+    "mandatory_signup": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "message_template_library": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "mock_generation_from_collection": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "mock_generation_from_openapi_spec": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "mock_logs": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": "sachin@requestly.io"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": "sahil@requestly.io"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": "indeed_dot_com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "mock_request_logs": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "mock_response_from_session": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$regex": "@(edreamsodigeo\\.com)$"
+            }
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": {
+              "$in": [
+                "adster_dot_tech",
+                "growfol_dot_com",
+                "autimation_dot_ai",
+                "requestly_dot_io",
+                "edreamsodigeo_dot_com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "mock_server": {
+      "defaultValue": true
+    },
+    "mqtt_support": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "multi_file_specifications": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "new-rule-table": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "new_onboarding": {
+      "defaultValue": "null",
+      "rules": [
+        {
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "hashVersion": 2,
+          "key": "new_onboarding",
+          "meta": [
+            {
+              "key": "0",
+              "name": "Control"
+            },
+            {
+              "key": "1",
+              "name": "Variation 1"
+            }
+          ],
+          "name": "new_app_onboarding_flow_exp",
+          "phase": "2",
+          "seed": "4ebb9c1d-231f-48c7-a769-081d155da7ae",
+          "variations": ["control", "variant"],
+          "weights": [0.5, 0.5]
+        }
+      ]
+    },
+    "notification_banner": {
+      "defaultValue": null
+    },
+    "ntlm_auth": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": "shubhranshu@browserstack.com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "oauth-2": {
+      "defaultValue": false
+    },
+    "oauth_2": {
+      "defaultValue": true
+    },
+    "onboarding_activation_v2": {
+      "defaultValue": "variant3",
+      "rules": [
+        {
+          "bucketVersion": 1,
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "hashVersion": 2,
+          "key": "onboarding_activation_v2",
+          "meta": [
+            {
+              "key": "0",
+              "name": "Control"
+            },
+            {
+              "key": "1",
+              "name": "Variation 1"
+            },
+            {
+              "key": "2",
+              "name": "Variation 2"
+            },
+            {
+              "key": "3",
+              "name": "Variation 3"
+            }
+          ],
+          "name": "onboarding_activation_v2",
+          "phase": "3",
+          "seed": "fe1c35b8-3b85-460e-9aec-7a1acc4b1ad0",
+          "variations": ["variant1", "variant2", "variant3", "variant4"],
+          "weights": [0, 0, 1, 0]
+        }
+      ]
+    },
+    "one_password_vault": {
+      "defaultValue": true
+    },
+    "openapi-import-support": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "org_resource_controls": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "company": "browserstack.com"
+              },
+              {
+                "$or": [
+                  {
+                    "company": "aon.com"
+                  },
+                  {
+                    "company": "aircanada.com"
+                  },
+                  {
+                    "company": "gnc-hq.com"
+                  },
+                  {
+                    "company": "prudential.com"
+                  },
+                  {
+                    "company": "woolworths.co.nz"
+                  },
+                  {
+                    "company": "applause.com"
+                  },
+                  {
+                    "company": "woolworths.com.au"
+                  },
+                  {
+                    "company": "edreamsodigeo.com"
+                  },
+                  {
+                    "company": "aircanada.ca"
+                  },
+                  {
+                    "company": "ext.aircanada.ca"
+                  },
+                  {
+                    "company": "ssss.gouv.qc.ca"
+                  },
+                  {
+                    "company": "veeam.com"
+                  },
+                  {
+                    "company": "pawatech.com"
+                  },
+                  {
+                    "company": "charter.com"
+                  },
+                  {
+                    "company": "spectrum.com"
+                  },
+                  {
+                    "company": "abtasty.com"
+                  },
+                  {
+                    "company": "salesforce.com"
+                  },
+                  {
+                    "company": "jackhenry.com"
+                  },
+                  {
+                    "company": "elli.eco"
+                  },
+                  {
+                    "company": "dynata.com"
+                  },
+                  {
+                    "company": "browserstack.com"
+                  },
+                  {
+                    "company": "covasoftware.com"
+                  },
+                  {
+                    "company": "iqmetrix.com"
+                  },
+                  {
+                    "company": "requestly.io"
+                  }
+                ]
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "override_syncing_status": {
+      "defaultValue": "null"
+    },
+    "override_team_sync_status": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email_domain": "placer_dot_ai"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": "placer_dot_io"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "active_workspace_id": "rCct5go9dz5Y5mIbiZT9"
+          },
+          "force": true
+        }
+      ]
+    },
+    "overriden_sync_status_value": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email_domain": "placer_dot_ai"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": "placer_dot_io"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "active_workspace_id": "rCct5go9dz5Y5mIbiZT9"
+          },
+          "force": true
+        }
+      ]
+    },
+    "pane_retention_limit": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "$or": [
+                  {
+                    "email": "aarush@browserstack.com"
+                  },
+                  {
+                    "email": "adarsh.b@browserstack.com"
+                  },
+                  {
+                    "email": "akanksha.b@browserstack.com"
+                  },
+                  {
+                    "email": "aviral.m@browserstack.com"
+                  },
+                  {
+                    "email": "bhushan.k@browserstack.com"
+                  },
+                  {
+                    "email": "dinesh.t@browserstack.com"
+                  },
+                  {
+                    "email": "kanishk@browserstack.com"
+                  },
+                  {
+                    "email": "nafees.n@browserstack.com"
+                  },
+                  {
+                    "email": "navdeep.r@browserstack.com"
+                  },
+                  {
+                    "email": "parth.bh@browserstack.com"
+                  },
+                  {
+                    "email": "pranshu@browserstack.com"
+                  },
+                  {
+                    "email": "rahul.ram@browserstack.com"
+                  },
+                  {
+                    "email": "rohan.ma@browserstack.com"
+                  },
+                  {
+                    "email": "rohit.ne@browserstack.com"
+                  },
+                  {
+                    "email": "rohit.sharma@browserstack.com"
+                  },
+                  {
+                    "email": "ronak.s@browserstack.com"
+                  },
+                  {
+                    "email": "sachin.j@browserstack.com"
+                  },
+                  {
+                    "email": "sagar.s@browserstack.com"
+                  },
+                  {
+                    "email": "sahil.gup@browserstack.com"
+                  },
+                  {
+                    "email": "saurabh.bh@browserstack.com"
+                  },
+                  {
+                    "email": "shrey.g@browserstack.com"
+                  },
+                  {
+                    "email": "shubhranshu@browserstack.com"
+                  },
+                  {
+                    "email": "vijay.g@browserstack.com"
+                  },
+                  {
+                    "email": "vishal.san@browserstack.com"
+                  },
+                  {
+                    "email": "rushil@browserstack.com"
+                  },
+                  {
+                    "email": "rushil@reuqestly.io"
+                  },
+                  {
+                    "email": "amit.upadhyay@browserstack.com"
+                  }
+                ]
+              },
+              {
+                "$or": [
+                  {
+                    "company": "aon.com"
+                  },
+                  {
+                    "company": "aircanada.com"
+                  },
+                  {
+                    "company": "gnc-hq.com"
+                  },
+                  {
+                    "company": "prudential.com"
+                  },
+                  {
+                    "company": "woolworths.co.nz"
+                  },
+                  {
+                    "company": "applause.com"
+                  },
+                  {
+                    "company": "woolworths.com.au"
+                  },
+                  {
+                    "company": "edreamsodigeo.com"
+                  },
+                  {
+                    "company": "aircanada.ca"
+                  },
+                  {
+                    "company": "ext.aircanada.ca"
+                  },
+                  {
+                    "company": "ssss.gouv.qc.ca"
+                  },
+                  {
+                    "company": "veeam.com"
+                  },
+                  {
+                    "company": "pawatech.com"
+                  },
+                  {
+                    "company": "charter.com"
+                  },
+                  {
+                    "company": "spectrum.com"
+                  },
+                  {
+                    "company": "abtasty.com"
+                  },
+                  {
+                    "company": "salesforce.com"
+                  },
+                  {
+                    "company": "jackhenry.com"
+                  },
+                  {
+                    "company": "elli.eco"
+                  },
+                  {
+                    "company": "dynata.com"
+                  },
+                  {
+                    "company": "browserstack.com"
+                  },
+                  {
+                    "company": "covasoftware.com"
+                  },
+                  {
+                    "company": "iqmetrix.com"
+                  },
+                  {
+                    "company": "requestly.io"
+                  }
+                ]
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "patch-lost-requests": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email_domain": "requestly_dot_io"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": "example_dot_com"
+          },
+          "force": true
+        },
+        {
+          "condition": {
+            "email_domain": "tapistro_dot_com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "paywall-visibility-threshold": {
+      "defaultValue": 15,
+      "rules": [
+        {
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "hashVersion": 2,
+          "key": "paywall-visibility-threshold",
+          "meta": [
+            {
+              "key": "0",
+              "name": "Control"
+            },
+            {
+              "key": "1",
+              "name": "Variation 1"
+            },
+            {
+              "key": "2",
+              "name": "Variation 2"
+            }
+          ],
+          "name": "paywall-visibility",
+          "phase": "0",
+          "seed": "paywall-visibility-threshold",
+          "variations": [15, 3, 0],
+          "weights": [0.3334, 0.3333, 0.3333]
+        }
+      ]
+    },
+    "paywall_intensity": {
+      "defaultValue": "control",
+      "rules": [
+        {
+          "condition": {
+            "app_mode": "DESKTOP"
+          },
+          "force": "control"
+        },
+        {
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "hashVersion": 2,
+          "key": "paywall_intensity",
+          "meta": [
+            {
+              "key": "0",
+              "name": "Control"
+            },
+            {
+              "key": "1",
+              "name": "Variation 1"
+            },
+            {
+              "key": "2",
+              "name": "Variation 2"
+            }
+          ],
+          "name": "paywall_intensity",
+          "phase": "3",
+          "seed": "c63645a8-6da0-4982-8551-500c01b27a82",
+          "variations": ["variantA", "variantB", "control"],
+          "weights": [1, 0, 0]
+        }
+      ]
+    },
+    "performance_testing": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "$or": [
+                  {
+                    "email": "aarush@browserstack.com"
+                  },
+                  {
+                    "email": "adarsh.b@browserstack.com"
+                  },
+                  {
+                    "email": "akanksha.b@browserstack.com"
+                  },
+                  {
+                    "email": "aviral.m@browserstack.com"
+                  },
+                  {
+                    "email": "bhushan.k@browserstack.com"
+                  },
+                  {
+                    "email": "dinesh.t@browserstack.com"
+                  },
+                  {
+                    "email": "kanishk@browserstack.com"
+                  },
+                  {
+                    "email": "nafees.n@browserstack.com"
+                  },
+                  {
+                    "email": "navdeep.r@browserstack.com"
+                  },
+                  {
+                    "email": "parth.bh@browserstack.com"
+                  },
+                  {
+                    "email": "pranshu@browserstack.com"
+                  },
+                  {
+                    "email": "rahul.ram@browserstack.com"
+                  },
+                  {
+                    "email": "rohan.ma@browserstack.com"
+                  },
+                  {
+                    "email": "rohit.ne@browserstack.com"
+                  },
+                  {
+                    "email": "rohit.sharma@browserstack.com"
+                  },
+                  {
+                    "email": "ronak.s@browserstack.com"
+                  },
+                  {
+                    "email": "sachin.j@browserstack.com"
+                  },
+                  {
+                    "email": "sagar.s@browserstack.com"
+                  },
+                  {
+                    "email": "sahil.gup@browserstack.com"
+                  },
+                  {
+                    "email": "saurabh.bh@browserstack.com"
+                  },
+                  {
+                    "email": "shrey.g@browserstack.com"
+                  },
+                  {
+                    "email": "shubhranshu@browserstack.com"
+                  },
+                  {
+                    "email": "vijay.g@browserstack.com"
+                  },
+                  {
+                    "email": "vishal.san@browserstack.com"
+                  },
+                  {
+                    "email": "rushil@browserstack.com"
+                  },
+                  {
+                    "email": "rushil@reuqestly.io"
+                  },
+                  {
+                    "email": "amit.upadhyay@browserstack.com"
+                  }
+                ]
+              },
+              {
+                "company": "browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "persona_recommendation": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "pinned_environments": {
+      "defaultValue": true
+    },
+    "plan_entitlements": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "posthog_session_replay": {
+      "defaultValue": false
+    },
+    "private_mocks": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "progressive_project_bootstrap": {
+      "defaultValue": true
+    },
+    "proxy_settings": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "$or": [
+                  {
+                    "email": "aarush@browserstack.com"
+                  },
+                  {
+                    "email": "adarsh.b@browserstack.com"
+                  },
+                  {
+                    "email": "akanksha.b@browserstack.com"
+                  },
+                  {
+                    "email": "aviral.m@browserstack.com"
+                  },
+                  {
+                    "email": "bhushan.k@browserstack.com"
+                  },
+                  {
+                    "email": "dinesh.t@browserstack.com"
+                  },
+                  {
+                    "email": "kanishk@browserstack.com"
+                  },
+                  {
+                    "email": "nafees.n@browserstack.com"
+                  },
+                  {
+                    "email": "navdeep.r@browserstack.com"
+                  },
+                  {
+                    "email": "parth.bh@browserstack.com"
+                  },
+                  {
+                    "email": "pranshu@browserstack.com"
+                  },
+                  {
+                    "email": "rahul.ram@browserstack.com"
+                  },
+                  {
+                    "email": "rohan.ma@browserstack.com"
+                  },
+                  {
+                    "email": "rohit.ne@browserstack.com"
+                  },
+                  {
+                    "email": "rohit.sharma@browserstack.com"
+                  },
+                  {
+                    "email": "ronak.s@browserstack.com"
+                  },
+                  {
+                    "email": "sachin.j@browserstack.com"
+                  },
+                  {
+                    "email": "sagar.s@browserstack.com"
+                  },
+                  {
+                    "email": "sahil.gup@browserstack.com"
+                  },
+                  {
+                    "email": "saurabh.bh@browserstack.com"
+                  },
+                  {
+                    "email": "shrey.g@browserstack.com"
+                  },
+                  {
+                    "email": "shubhranshu@browserstack.com"
+                  },
+                  {
+                    "email": "vijay.g@browserstack.com"
+                  },
+                  {
+                    "email": "vishal.san@browserstack.com"
+                  },
+                  {
+                    "email": "rushil@browserstack.com"
+                  },
+                  {
+                    "email": "rushil@reuqestly.io"
+                  },
+                  {
+                    "email": "amit.upadhyay@browserstack.com"
+                  }
+                ]
+              },
+              {
+                "company": "aon.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "quick_share": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "redirect_rule_onboarding": {
+      "defaultValue": "",
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "meta": [
+            {
+              "key": "0"
+            },
+            {
+              "key": "1"
+            },
+            {
+              "key": "2"
+            },
+            {
+              "key": "3"
+            }
+          ],
+          "variations": ["control", "docs", "tour", "tooltip"],
+          "weights": [0.25, 0.25, 0.25, 0.25]
+        },
+        {
+          "condition": {
+            "$or": [
+              {
+                "x_flag_redirect_rule_onboarding": {
+                  "$exists": true
+                }
+              },
+              {
+                "redirect_rules": {
+                  "$exists": false
+                }
+              }
+            ]
+          },
+          "coverage": 1,
+          "hashAttribute": "deviceId",
+          "key": "redirect_rule_onboarding",
+          "meta": [
+            {
+              "key": "0"
+            },
+            {
+              "key": "1"
+            },
+            {
+              "key": "2"
+            },
+            {
+              "key": "3"
+            }
+          ],
+          "variations": ["control", "docs", "tour", "tooltip"],
+          "weights": [0.25, 0.25, 0.25, 0.25]
+        }
+      ]
+    },
+    "request_settings": {
+      "defaultValue": true
+    },
+    "requestly_api_in_header": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        }
+      ]
+    },
+    "response_visualizer": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "sample_flag_check": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "sandbox_safe_mode": {
+      "defaultValue": false
+    },
+    "scheduled_run_deep_links": {
+      "defaultValue": true
+    },
+    "scheduled_runs": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "company": "browserstack.com"
+              },
+              {
+                "$or": [
+                  {
+                    "company": "aon.com"
+                  },
+                  {
+                    "company": "aircanada.com"
+                  },
+                  {
+                    "company": "gnc-hq.com"
+                  },
+                  {
+                    "company": "prudential.com"
+                  },
+                  {
+                    "company": "woolworths.co.nz"
+                  },
+                  {
+                    "company": "applause.com"
+                  },
+                  {
+                    "company": "woolworths.com.au"
+                  },
+                  {
+                    "company": "edreamsodigeo.com"
+                  },
+                  {
+                    "company": "aircanada.ca"
+                  },
+                  {
+                    "company": "ext.aircanada.ca"
+                  },
+                  {
+                    "company": "ssss.gouv.qc.ca"
+                  },
+                  {
+                    "company": "veeam.com"
+                  },
+                  {
+                    "company": "pawatech.com"
+                  },
+                  {
+                    "company": "charter.com"
+                  },
+                  {
+                    "company": "spectrum.com"
+                  },
+                  {
+                    "company": "abtasty.com"
+                  },
+                  {
+                    "company": "salesforce.com"
+                  },
+                  {
+                    "company": "jackhenry.com"
+                  },
+                  {
+                    "company": "elli.eco"
+                  },
+                  {
+                    "company": "dynata.com"
+                  },
+                  {
+                    "company": "browserstack.com"
+                  },
+                  {
+                    "company": "covasoftware.com"
+                  },
+                  {
+                    "company": "iqmetrix.com"
+                  },
+                  {
+                    "company": "requestly.io"
+                  }
+                ]
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "secret_scanner": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "$or": [
+              {
+                "email": "aarush@browserstack.com"
+              },
+              {
+                "email": "adarsh.b@browserstack.com"
+              },
+              {
+                "email": "akanksha.b@browserstack.com"
+              },
+              {
+                "email": "aviral.m@browserstack.com"
+              },
+              {
+                "email": "bhushan.k@browserstack.com"
+              },
+              {
+                "email": "dinesh.t@browserstack.com"
+              },
+              {
+                "email": "kanishk@browserstack.com"
+              },
+              {
+                "email": "nafees.n@browserstack.com"
+              },
+              {
+                "email": "navdeep.r@browserstack.com"
+              },
+              {
+                "email": "parth.bh@browserstack.com"
+              },
+              {
+                "email": "pranshu@browserstack.com"
+              },
+              {
+                "email": "rahul.ram@browserstack.com"
+              },
+              {
+                "email": "rohan.ma@browserstack.com"
+              },
+              {
+                "email": "rohit.ne@browserstack.com"
+              },
+              {
+                "email": "rohit.sharma@browserstack.com"
+              },
+              {
+                "email": "ronak.s@browserstack.com"
+              },
+              {
+                "email": "sachin.j@browserstack.com"
+              },
+              {
+                "email": "sagar.s@browserstack.com"
+              },
+              {
+                "email": "sahil.gup@browserstack.com"
+              },
+              {
+                "email": "saurabh.bh@browserstack.com"
+              },
+              {
+                "email": "shrey.g@browserstack.com"
+              },
+              {
+                "email": "shubhranshu@browserstack.com"
+              },
+              {
+                "email": "vijay.g@browserstack.com"
+              },
+              {
+                "email": "vishal.san@browserstack.com"
+              },
+              {
+                "email": "rushil@browserstack.com"
+              },
+              {
+                "email": "rushil@reuqestly.io"
+              },
+              {
+                "email": "amit.upadhyay@browserstack.com"
+              }
+            ]
+          },
+          "force": true
+        }
+      ]
+    },
+    "set_response_value_as_variable": {
+      "defaultValue": true
+    },
+    "share_via_link": {
+      "defaultValue": false
+    },
+    "show_disable_tracking_setting": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "show_feature_limit_banner": {
+      "defaultValue": true
+    },
+    "show_systemwide_source": {
+      "defaultValue": {
+        "whitelist": ["Windows", "macOS"]
+      }
+    },
+    "show_upgrade_popovers": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$regex": "@edreamsodigeo\\.com$|akanksha@requestly.io|img_2019056@iiitm.ac.in"
+            }
+          },
+          "force": false
+        },
+        {
+          "condition": {
+            "email_domain": {
+              "$in": ["adster_dot_tech", "growfol_dot_com", "autimation_dot_ai", "edreamsodigeo_dot_com"]
+            }
+          },
+          "force": false
+        },
+        {
+          "condition": {
+            "$and": [
+              {
+                "install_date": {
+                  "$exists": true
+                }
+              },
+              {
+                "days_since_install": {
+                  "$exists": true
+                }
+              },
+              {
+                "days_since_install": {
+                  "$lte": 14
+                }
+              }
+            ]
+          },
+          "force": false
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "ssl_certificates": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "terminal_support": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "test_integration": {
+      "defaultValue": true
+    },
+    "test_url_modal": {
+      "defaultValue": true,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    },
+    "traffic_table_perisitence": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "traffic_table_virtualization_v2": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email": {
+              "$in": [
+                "sahil@requestly.io",
+                "sagar@requestly.io",
+                "navdeep@requestly.io",
+                "sachin@requestly.io",
+                "shrey@requestly.io",
+                "vaibhav@requestly.io",
+                "ashish@requestly.io",
+                "rohan@requestly.io",
+                "parth@requestly.io",
+                "contact@requestly.io",
+                "nafees@requestly.io",
+                "vivek@requestly.io",
+                "akanksha@requestly.io",
+                "kaavian@requestly.io",
+                "sahil865gupta@gmail.com",
+                "navdeepsinghrathore2000@gmail.com",
+                "abhishek@requestly.io",
+                "nrathore5356@gmail.com",
+                "vijay@requestly.io",
+                "aarush@requestly.io",
+                "rahul.ramteke@requestly.io",
+                "dinesh@requestly.io",
+                "navdeep.r+windows@browserstack.com",
+                "deval@browserstack.com",
+                "viraj.y@browserstack.com",
+                "kanishk@requestly.io",
+                "rushil@requestly.io",
+                "rohit.ne@browserstack.com",
+                "hemant.d@browserstack.com",
+                "parth.bh@browserstack.com",
+                "aviral.m@browserstack.com",
+                "nafees.n@browserstack.com",
+                "teja@browserstack.com",
+                "shrey.g@browserstack.com",
+                "soubhir@browserstack.com",
+                "nafees87n@gmail.com",
+                "aarush@browserstack.com",
+                "adarsh.b@browserstack.com",
+                "akanksha.b@browserstack.com",
+                "dinesh.t@browserstack.com",
+                "kanishk@browserstack.com",
+                "navdeep.r@browserstack.com",
+                "rahul.ram@browserstack.com",
+                "rohan.ma@browserstack.com",
+                "rohit.sharma@browserstack.com",
+                "ronak.ka@browserstack.com",
+                "ronak.s@browserstack.com",
+                "rushil@browserstack.com",
+                "sachin.j@browserstack.com",
+                "sagar.s@browserstack.com",
+                "sahil.gup@browserstack.com",
+                "saurabh.bh@browserstack.com",
+                "shubhranshu@browserstack.com",
+                "vijay.g@browserstack.com",
+                "vishal.san@browserstack.com"
+              ]
+            }
+          },
+          "force": true
+        },
+        {
+          "force": true
+        }
+      ]
+    },
+    "trial_days_duration": {
+      "defaultValue": 30
+    },
+    "use_events_engine": {
+      "defaultValue": true
+    },
+    "user-grr-blocked": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "condition": {
+            "email_domain": "gm_dot_com"
+          },
+          "force": true
+        }
+      ]
+    },
+    "vault": {
+      "defaultValue": true
+    },
+    "vault_source_list": {
+      "defaultValue": true
+    },
+    "websocket": {
+      "defaultValue": false,
+      "rules": [
+        {
+          "force": true
+        }
+      ]
+    }
+  },
+  "source": "cdn.growthbook.io production SDK payload (app.requestly.io)"
+}

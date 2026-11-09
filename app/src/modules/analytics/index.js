@@ -5,6 +5,7 @@ import posthogIntegration from "./integrations/posthog";
 import localIntegration from "./integrations/local";
 import { isEnvAutomation } from "utils/EnvUtils";
 import { WorkspaceType } from "features/workspaces/types";
+import { LOCAL_OFFLINE } from "local/config";
 
 // These are mostly not user-triggered
 const BLACKLISTED_EVENTS = [
@@ -68,7 +69,7 @@ export const initIntegrations = (user, dispatch) => {
     return;
 
   if (window.top === window.self) {
-    posthogIntegration.init(user);
+    if (!LOCAL_OFFLINE) posthogIntegration.init(user); // local fork: no PostHog
     localIntegration.init(null, dispatch);
   }
 };
